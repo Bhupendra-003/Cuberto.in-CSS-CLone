@@ -1,6 +1,16 @@
-let main = document.querySelector("html");
-let cursor = document.querySelector(".cursor");
-main.addEventListener("mousemove", (dets)=>{
-    cursor.style.left = dets.clientX + "px";
-    cursor.style.top = dets.clientY + "px";
-})
+// Get the main HTML element and the cursor element
+const main = document.querySelector("html");
+const cursor = document.querySelector(".cursor");
+
+// Add an event listener to the main element for mouse movement
+main.addEventListener("mousemove", (event) => {
+    // Update the cursor position based on the mouse coordinates and scroll position
+    const x = event.clientX - 7.5;
+    const y = event.clientY - 7.5;
+    cursor.style.transform = `translate(${x}px, ${y}px)`;
+});
+
+// Add an event listener to the window for scroll events
+window.addEventListener("scroll", () => {
+    // Do nothing, let the mousemove event handle the cursor position
+});
