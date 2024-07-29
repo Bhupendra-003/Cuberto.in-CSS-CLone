@@ -10,7 +10,5 @@ main.addEventListener("mousemove", (event) => {
     cursor.style.transform = `translate(${x}px, ${y}px)`;
 });
 
-// Add an event listener to the window for scroll events
-window.addEventListener("scroll", () => {
-    // Do nothing, let the mousemove event handle the cursor position
-});
+
+
