@@ -7,6 +7,7 @@ body.addEventListener("mouseover", () => {
     cursor.style.display = "inline-block";
     cursor.style.animation = "appear 0.18s linear forwards"
 });
+
 body.addEventListener("mouseleave", () => {
     cursor.style.display = "none";
 });
