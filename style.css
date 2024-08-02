@@ -289,6 +289,7 @@ body {
     position: relative;
     top: -70px;
     color: black;
+    padding-bottom: 20px;
 }
 .our-philos-tittle{
     line-height: 8rem;
@@ -330,10 +331,27 @@ body {
 .our-philos-content .right :nth-child(2){
     margin-top: 20px;
 }
-.foot-follow-ban{
-    height: 80vh;
-    width: 100%;
+footer{
     background-color: black;
+}
+.foot-follow-ban{
+    color: white;
+    height: 70vh;
+    width: 100%;
     position: relative;
-    top: -87px;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.foot-follow-ban h1{
+    font-family: "Matter Light";
+    font-size: 10rem;
+    font-weight: 300;
+    height: 20vw;
+}
+.foot-follow-ban p{
+    font-size: 1rem;
+    text-align: left;
+    font-family: "Matter";
+    padding-bottom: 5vw;
 }
